@@ -1,3 +1,4 @@
+import { PipeTransform } from '@angular/core';
 import { Gender } from '../services/user.service';
 import { GenderEmoji, GenderPipe } from './gender.pipe';
 

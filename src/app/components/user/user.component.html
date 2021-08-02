@@ -1,0 +1,18 @@
+<!-- <p class="user-first-name">
+    {{firstName}}
+</p>
+<p class="user-last-name">
+    {{lastName}}
+</p>
+<p class="user-id">
+    {{id}}
+</p>
+<p class="user-gender">
+    {{gender | gender}}
+</p> -->
+<table *ngIf="user$ | async as user">
+    <td class="user-first-name">{{user.firstName}}</td>
+    <td class="user-last-name">{{user.lastName}}</td>
+    <td class="user-gender">{{user.gender | gender}}</td>
+    <td class="user-id">{{user.id}}</td>
+</table>

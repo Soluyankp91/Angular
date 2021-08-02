@@ -15,7 +15,12 @@ export class GenderPipe implements PipeTransform {
     [Gender.FEMALE, GenderEmoji.FEMALE]
   ]);
   public transform(value: Gender): GenderEmoji | void {
-    return;
+    console.log(Gender);
+    if(value==="male"){
+      return GenderEmoji.MALE
+    }
+    else{
+      return GenderEmoji.FEMALE
+    }
   }
-
 }

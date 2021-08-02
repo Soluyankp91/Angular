@@ -28,7 +28,13 @@ export class PermissionDirective implements OnInit, OnDestroy {
   }
 
   public hasPermission(userPermissions: Permission[]): boolean {
-    return false;
+    if(userPermissions[0]==="ADMIN"){
+      return true;
+    }
+    else{
+      console.log("Persmission denied")
+      return false;
+    }
   }
 
   private renderView() {
